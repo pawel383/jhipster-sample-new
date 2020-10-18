@@ -47,6 +47,18 @@ public class CacheConfiguration {
             createCache(cm, pl.pawel.jhipster.domain.User.class.getName());
             createCache(cm, pl.pawel.jhipster.domain.Authority.class.getName());
             createCache(cm, pl.pawel.jhipster.domain.User.class.getName() + ".authorities");
+            createCache(cm, pl.pawel.jhipster.domain.Region.class.getName());
+            createCache(cm, pl.pawel.jhipster.domain.Country.class.getName());
+            createCache(cm, pl.pawel.jhipster.domain.Location.class.getName());
+            createCache(cm, pl.pawel.jhipster.domain.Department.class.getName());
+            createCache(cm, pl.pawel.jhipster.domain.Department.class.getName() + ".employees");
+            createCache(cm, pl.pawel.jhipster.domain.Task.class.getName());
+            createCache(cm, pl.pawel.jhipster.domain.Task.class.getName() + ".jobs");
+            createCache(cm, pl.pawel.jhipster.domain.Employee.class.getName());
+            createCache(cm, pl.pawel.jhipster.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, pl.pawel.jhipster.domain.Job.class.getName());
+            createCache(cm, pl.pawel.jhipster.domain.Job.class.getName() + ".tasks");
+            createCache(cm, pl.pawel.jhipster.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
